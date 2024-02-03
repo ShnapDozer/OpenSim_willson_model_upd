@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-	<ExternalLoads name="Ex2">
+	<ExternalLoads name="externalloads">
 		<objects>
-			<ExternalForce name="left">
+			<ExternalForce name="right">
 				<isDisabled> false </isDisabled>
 				<!--Name of the body the force is applied to.-->
-				<applied_to_body> foot2 </applied_to_body>
+				<applied_to_body> calcn_r </applied_to_body>
 				<!--Name of the body the force is expressed in (default is ground).-->
 				<force_expressed_in_body> ground </force_expressed_in_body>
 				<!--Name of the body the point is expressed in (default is ground).-->
@@ -22,10 +22,10 @@
 				<!--Name of the data source (Storage) that will supply the force data.-->
 				<data_source_name> Unassigned </data_source_name>
 			</ExternalForce>
-			<ExternalForce name="right">
+			<ExternalForce name="left">
 				<isDisabled> false </isDisabled>
 				<!--Name of the body the force is applied to.-->
-				<applied_to_body> calcn_r </applied_to_body>
+				<applied_to_body> foot2 </applied_to_body>
 				<!--Name of the body the force is expressed in (default is ground).-->
 				<force_expressed_in_body> ground </force_expressed_in_body>
 				<!--Name of the body the point is expressed in (default is ground).-->
@@ -47,6 +47,6 @@
 		<!--Storage file (.sto) containing (3) components of force and/or torque
 		    and point of application.Note: this file overrides the data source
 		    specified by the individual external forces if specified.-->
-		<datafile>Trial_01_grf.mot</datafile>
+		<datafile> ../ExtForces/standart_grf.mot </datafile>
 </ExternalLoads>
 </OpenSimDocument>
